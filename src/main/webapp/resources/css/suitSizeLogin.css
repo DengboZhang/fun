@@ -1,0 +1,134 @@
+@media only screen and (max-width:1910px) {
+	.nav{
+		width: 100%;
+	}	
+	body{
+		width: 100%;	
+	}
+}
+@media only screen and (min-width:1150px) and (max-width:1414px){
+	#navTable .navTableRow .third{
+		width: 63%;
+	}
+	
+}
+@media only screen and (min-width:983px) and (max-width:1150px){
+	#navTable .navTableRow .third{
+		width: 45%;
+	}
+	#navTable .navTableRow .fourth{
+		width: 180px;
+		padding-left: 10%;
+	}
+}
+
+@media only screen and (max-width:1000px){
+	.nav{
+		display: none;
+	}
+	.navMobile{
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;	
+		border-bottom: 2px solid #A9A9A9;
+		display: block;
+		width: 100%;
+		height: 110px;
+		background-color:white;
+		position: fixed;
+		left: 0px;
+		top: 0px;
+	}
+	.navMobile>a{
+		margin-top: 5px;
+		color: #808080;
+		font-size: 6em;
+		float: left;
+		display: block;
+		text-decoration: none;
+		width: 10%;
+		height: 100%;
+	}
+	.navMobile>a img{
+		margin-left: 20px;
+		margin-top: 10px;
+		width: 90px;
+		height: auto;
+	}
+	.navMobile>span{
+		display: block;
+		margin-top: 18px;
+		margin-left: 33%;
+		color: #808080;
+		font-size: 5em;
+	}
+	body{
+		background-image: none;
+		background-color:whitesmoke ;
+		height: 1900px;
+	}
+	#login{
+		margin-left: 4%;
+		float: none;
+		color: black;
+		margin-top:100px ;
+		width: auto;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;	
+		width: 92%;	
+	}
+	#login>p{
+		display: none;
+	}
+	#login>form label{
+		display: none;
+	}
+	#login #userName{
+		margin-top: 120px;
+	}
+	#login>form>input{
+		float: none;
+		margin: 50px 0px 0px 0px;
+		width: 92%;
+		font-size: 4.7em;
+		text-align: left;
+	}
+	#login #submit{
+		text-align: center;
+		font-size: 4em;
+		width: 100%;
+		height: 100px;
+	}
+	#footer{
+		display: block;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;	
+		width: 100%;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		height: 110px;
+		border-top: 2px solid #A9A9A9;
+		background-color: white;
+	}
+	#footer a{
+
+		text-align: center;
+		margin-left: 13%;
+	}
+	#footer img{
+		margin-top: 15px;
+		width: 80px;
+		height: auto;
+	}
+}
+@media only screen and (max-width:1164px ) {
+	#text{
+		display: none;
+	}
+	body{
+		background-size: 1164px auto;
+	}
+}

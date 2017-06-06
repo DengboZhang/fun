@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta charset="UTF-8">
+		<title>LYQ Registe Page</title>
+		<link rel="stylesheet" href="/fun/resources/css/reuseCSS/nav.css" />
+		<link rel="stylesheet" href="/fun/resources/css/registe.css" />
+		<link rel="stylesheet" href="/fun/resources/css/suitSizeRegiste.css" />
+	</head>
+	<body>
+		<div class="navMobile">
+			<a href=""><img src="/fun/resources/img/icon/back.png"></a>
+			<span>Funtake注册</span>
+		</div>
+		<div class="nav">
+			<div id = "navTable">
+				<div class="navTableRow">
+					<div class="navTableCell first">
+						<img alt="This is the main img in this page" title="Universe image" src = "/fun/resources/img/main/timg (7).jpg" id="logo">
+					</div>
+					<div class="navTableCell second">
+						<a id="logoName">友乐取</a>
+					</div>
+					<div class="navTableCell third">
+						<ul id="selectNav">
+							<li>按钮1</li>
+							<li>按钮2</li>
+							<li>按钮3</li>
+						</ul>
+					</div>
+					<div class="navTableCell fourth">
+						<div id="btnSelect">
+						<a class="btn" href="/fun/loginPage">登录</a>
+						<a class="btn" href="/fun/registePage">注册</a>
+						</div>
+					</div>
+					<div class="navTableCell fiveth">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="registe">
+			<p>FunTake注册</p>
+			<form action="http://www.baidu.com" method="post">
+				<label for="userName">用户名:</label>
+				<input id="userName" name="userName" type="text" pattern="^\w{6,16}$" maxlength="16" placeholder="请输入用户名" required />
+				<div></div>
+				<label for="passWord">密码:</label>
+				<input id="passWord" name="passWord" type="password" pattern="^[\w\s(\\-\\+\\*\\/\\^\\%\\$\\#\\@\\!)]{6,16}$" maxlength="16" placeholder="请输入密码" required />
+				<div></div>
+				<label for="passWordCheck">确认密码:</label>
+				<input id="passWordCheck" name="passWordCheck" pattern="^[\w\s(\\-\\+\\*\\/\\^\\%\\$\\#\\@\\!)]{6,16}$" maxlength="16" type="password" placeholder="重复确认密码" required />
+				<div></div>
+				<label for="email">邮箱:</label>
+				<input id="email" name="email" type="email" placeholder="请输入邮箱" required />
+				<div></div>
+				<label for="phone">手机号:</label>
+				<input id="phone" name="phone" type="text" pattern="^1[3|4|5|6|7|8]\d{9}$" maxlength="11" placeholder="请输入手机号" required />
+				<div></div>
+				<label for="verificationCode">验证码:</label>
+				<input id="verificationCode" name="verificationCode" type="text" pattern="^\w{4}$" maxlength="4" placeholder="请输入验证码" required />
+				<div></div>
+				<div>
+					<input type="button" id="sendVerificationCode" value="发送验证码" />
+					<div></div>
+					<input id="submit" type="submit" value="确认注册" />
+				</div>
+			</form>
+		</div>
+		<div id="text">
+			<p>友乐取</p>
+			<p>客户注册登录系统</p>
+		</div>
+		<div id="footer">
+			<div class="footerIcon">
+				<a><img src="/fun/resources/img/icon/main.png"/></a>
+				<a><img src="/fun/resources/img/icon/message.png"></a>
+				<a><img src="/fun/resources/img/icon/form.png"/></a>
+				<a><img src="/fun/resources/img/icon/account.png"></a>
+			</div>
+		</div>
+		<script src="/fun/resources/js/mainFunction.js"></script>
+		<script src="/fun/resources/js/registePage.js"></script>
+	</body>
+</html>

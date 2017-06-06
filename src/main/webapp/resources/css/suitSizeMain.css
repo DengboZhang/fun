@@ -1,0 +1,387 @@
+@media only screen and (max-width:1910px) {
+	.nav{
+		width: 100%;
+	}	
+	body{
+		width: 100%;	
+	}
+	#scorllimg{
+		width: 1440px;
+		height: auto;
+	}
+	.footer{
+		width: 100%;
+	}
+	.info{
+		width: 100%;
+	}
+	#scorllImg{
+		width: 101%;
+		height: auto;
+	}
+	.imgShow{
+		width: 100%;
+	}
+	.infoSub{
+		width: 100%;
+	}
+}
+@media only screen and (max-width:1830px) {
+	.infoTableCell{
+		margin-left: 8%;
+		margin-top:60px;
+	}
+	.rankList{
+		height: 1300px;
+	}
+	.footer{ 
+		width: 101%;
+		margin: 700px 0px -40px -10px;
+	}
+}
+@media only screen and (max-width:1506px) {
+	.infoTableCell{
+		margin-left: 2%;
+	}
+}
+@media only screen and (max-width:1318px) {
+	.infoTableCell{
+		margin-left: 15%;
+	}
+	.rankList{
+		float: none;
+		width: 100%;
+		border-left: none;
+		height: auto;
+	}
+	.rankInfo{
+		border: black solid 1px;
+		float: left;
+		margin-left:8%;
+		margin-top:20px ;
+		width: 300px;
+		height: 100px;
+		border-radius: 20px;
+		box-shadow:0px 0px 12px #808080 ;
+	}
+	.rankInfo:hover{
+		background-color: aliceblue ;
+	}
+	.head{
+		margin-top:11px ;
+		margin-left: 10px;
+	}
+	.rankListText{
+		margin-left:90px;
+		width: auto;
+		height: auto;
+	}
+	.moreInfo{
+		display: none;
+	}
+	.infoRight{
+		margin-top: 400px;
+	}
+	.footer{
+		margin-top: 1100px;
+	}
+}
+@media only screen and (max-width:1194px) {
+	.infoTableCell{
+		margin-left: 10%;
+	}
+	.rankInfo{
+		margin-left: 5%;
+	}
+}
+@media only screen and (max-width:1066px) {
+	.infoTableCell{
+		margin-left: 10%;
+	}
+	.infoRight{
+		margin-top: 700px;
+	}
+	.rankInfo{
+		margin-left: 15%;
+	}
+	.footer{
+		margin-top: 1400px;
+	}
+}
+@media only screen and (min-width:1150px) and (max-width:1414px){
+	#navTable .navTableRow .third{
+		width: 63%;
+	}
+	
+}
+@media only screen and (min-width:983px) and (max-width:1150px){
+	#navTable .navTableRow .third{
+		width: 45%;
+	}
+	#navTable .navTableRow .fourth{
+		width: 180px;
+		padding-left: 10%;
+	}
+}
+
+@media only screen and (max-width:983px){
+	.nav{
+		display: none;
+	}
+	
+	.imgShow{
+		padding-top:0px ;
+		margin-top: -10px;
+	}
+	.mobileTable{
+		display: table;
+		border-collapse: separate;
+		border-spacing: 130px 20px;
+	}
+	.mobileTable .mobileTableRow{
+		display: table-row;
+		
+	}
+	.mobileTable .mobileTableRow .mobileBtn{
+		display: table-cell;
+		border-radius:30px ;
+		width: 131px;
+		height: 131px;
+		color: white;
+		font-size:0.3em ;
+		background-color:black ;
+	}
+	.mobileTable .mobileTableRow .mobileBtn label{
+		display: block;
+		padding-top: 35px;
+	}
+	#btnOne{
+		background-color:cornflowerblue ;
+	}
+	#btnTwo{
+		background-color: limegreen;
+	}
+	#btnThree{
+		background-color: grey;
+	}
+	#btnOne:hover{
+		background-color:dodgerblue;
+	}
+	#btnTwo:hover{
+		background-color: mediumseagreen;
+	}
+	#btnThree:hover{
+		background-color: dimgrey;
+	}
+	.textBtn{
+		display: none;
+	}
+	.infoSub{
+		height: 140px;
+	}
+	.head{
+		margin-top: 35px;
+		margin-left:70px ;
+		border-radius:230px ;
+		width: 230px;
+		height: 230px;
+	}
+	.rankListText{
+		
+		margin-left: 400px;
+	}
+	.rankListText p{
+		font-size:4.5em;
+	}
+	.rankListText a{
+		font-size:3em;
+	}
+	.rankInfo{
+		border: black solid 1px;
+		float: left;
+		margin-left:1%;
+		margin-top:20px ;
+		width: 98%;
+		height: 300px;
+		border-radius: 20px;
+		box-shadow:0px 0px 12px #808080 ;
+	}
+	.infoTableCell .headLeft{
+		margin-top: 135px ;
+		margin-left: 70px;
+	}
+	.infoTableCell .leftText{
+		width: 60%;
+		margin-left: 400px;
+		margin-top: 100px ;
+		font-size: 3em;
+		
+	}
+	.infoTableCell .leftText hr{
+		margin-left: 0px;
+		width: 70%;
+		margin-top: 30px;
+	}
+	.infoTableCell .leftTextInfo{
+		width: 60%;
+		font-size:2em ;
+		margin-top:20px ;
+		margin-left: 400px;
+	}
+	#lastInfo{
+		font-size:6em ;
+	}
+	.infoTableCell{
+		width: 98%;
+		height: 500px;
+		margin-left:1% ;
+	}
+	.infoRight{
+		margin-top: 3000px;
+	}
+	.footer{
+		margin-top: 7400px;
+	}
+	#footer{
+		display: block;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;	
+		width: 100%;
+		position: fixed;
+		bottom: 0px;
+		left: 0px;
+		height: 110px;
+		border-top: 2px solid #A9A9A9;
+		background-color: white;
+	}
+	#footer a{
+
+		text-align: center;
+		margin-left: 13%;
+	}
+	#footer img{
+		margin-top: 15px;
+		width: 80px;
+		height: auto;
+	}
+}
+@media only screen and (max-width:913px){
+	.rankInfo{
+		height: 400px;
+	}
+	.infoTableCell{
+		height: 600px;
+	}
+	.mobileTable{
+		border-spacing: 110px 20px;
+	}
+	.infoTableCell .leftTextInfo{
+		width: 50%;
+	}
+	.infoTableCell .leftText{
+		width: 50%;
+	}
+	.infoRight{
+		margin-top: 3900px;
+	}
+	.footer{
+		margin-top: 9200px;
+	}
+}
+@media only screen and (max-width:833px){
+	.mobileTable{
+		border-spacing: 90px 20px;
+	}
+	.infoTableCell{
+		height: 650px;
+	}
+	.infoTableCell .leftTextInfo{
+		width: 40%;
+	}
+	.infoTableCell .leftText{
+		width: 40%;
+	}
+	.infoRight{
+		margin-top: 3900px;
+	}
+	.footer{
+		margin-top: 9600px;
+	}
+}
+@media only screen and (max-width:753px){
+	.mobileTable{
+		border-spacing: 70px 20px;
+	}
+}
+@media only screen and (max-width:700px ) {
+	.infoTableCell{
+		height: 700px;
+	}
+	.infoTableCell .leftTextInfo{
+		margin-left: 20px;
+		width: 90%;
+	}
+	.infoTableCell .leftText{
+		margin-top: 400px;
+		margin-left: 20px;
+		width: 90%;
+	}
+	.footer{
+		margin-top: 10100px;
+	}
+}
+@media only screen and (max-width:673px){
+	.mobileTable{
+		border-spacing: 50px 20px;
+	}
+	.rankInfo{
+		height: 500px;
+	}
+	.rankListText{
+		margin-left: 20px;
+	}
+	.infoRight{
+		margin-top: 4800px;
+	}
+	.footer{
+		margin-top: 11000px;
+	}
+}
+@media only screen and (max-width:593px){
+	.mobileTable{
+		border-spacing: 30px 20px;
+	}
+}
+@media only screen and (max-width: 563px) {
+	.infoTableCell{
+		height: 850px;
+	}
+	.infoTableCell .leftTextInfo{
+		margin-left: 20px;
+		width: 90%;
+	}
+	.infoTableCell .leftText{
+		margin-top: 400px;
+		margin-left: 20px;
+		width: 90%;
+	}
+	.rankInfo{
+		height: 650px;
+	}
+	.rankListText{
+		margin-top: 300px ;
+		margin-left: 20px;
+	}
+	.infoRight{
+		margin-top: 6150px;
+	}
+	.footer{
+		margin-top: 13700px;
+	}
+}
+@media only screen and (max-width:513px){
+	.mobileTable{
+		border-spacing: 10px 20px;
+	}
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>获取图片</title>
+</head>
+
+<script src="./resources/js/jquery.min.js"></script>
+<script src="./resources/js/radar/Chart.js"></script>
+<script src="./resources/js/radar/radar.js"></script>
+<script src="./resources/js/echarts/echarts.min.js"></script>
+<script type="text/javascript">
+function getPicture()
+{        
+	
+	    var myChart = echarts.init(document.getElementById('main'));
+     	$.ajax({
+			url:'/fun/picture/getPicture',
+			type:'get',  
+			success:function(data){
+				var max=0;
+  				var LegendData=[];
+  				var showRadaIndicator=[];
+  				var showSeriesData=[];
+  				//取出legend数据
+  				for(var i=0;i<data.legend.length;i++){
+  					LegendData.push(data.legend[i]);
+  				  }
+			    
+		       //取出各个legend数据的 在各个属性上的值，以所有值中的最大值作 顶点值   
+		    for(var i=0;i<data.series.length;i++){
+			        var temp={};
+			        var cost=[];   
+				for(var j=0;j<data.series[i].value.length;j++){
+					if(data.series[i].value[j]>max){
+						//number函数负责将对象转换为函数
+					     max=Number(data.series[i].value[j]).toFixed(2);
+					      }
+					cost.push(Number(data.series[i].value[j]).toFixed(2));
+				    }
+				temp.value=cost;
+				temp.name=data.legend[i];
+				showSeriesData.push(temp);
+			    }   
+           //处理雷达图的指标
+		for(var i=0;i<data.indicator.length;i++){
+			var temp={};
+			if(i==0){//第一次的时候，对产生的雷达图的属性做一些设置，字体，颜色，是否显示信息，数字显示位数等等。。。
+				var showinfo={};
+				var textStyle={};
+				showinfo.show=true;//控制  图中间轴线  例如（0,1,2,3,4,5） 的显示
+				showinfo.formatter = function(value,index){return value.toFixed(2)};
+				textStyle.fontSize=10;
+				textStyle.color='#333';
+				showinfo.textStyle=textStyle;
+				temp.axisLabel=showinfo;
+			}
+			temp.text=data.indicator[i].name;
+			temp.max=max;
+			showRadaIndicator.push(temp);
+		}
+		//设置option
+		option = {
+				title: {
+				      text: '基础雷达图',
+				    
+				},
+				tooltip: {
+					trigger: 'axis'
+				},
+			    legend: {
+			   
+			    	top:[20],
+			    	x: 'center',
+			        data: LegendData,
+			    },
+			    radar: {
+			        // shape: 'circle',
+			        indicator: showRadaIndicator,
+			        radius:120  
+			    },
+			    series: [{
+			        type: 'radar',
+			        tooltip: {
+		            trigger: 'item'
+		            },
+			        data : showSeriesData
+			    }]
+			};
+		var myChart = echarts.init(document.getElementById('main'));
+		//绘图
+		myChart.setOption(option);
+           
+			}    
+		
+		});
+
+}
+</script>
+<body>
+          <button onclick="getPicture()">获取图片</button>
+         <div id="main" style="width: 800px;height:400px;margin:0 auto;"></div>
+</body>
+
+</html>

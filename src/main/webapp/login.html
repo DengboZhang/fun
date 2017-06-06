@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>LYQ login page</title>
+		<link rel="stylesheet" href="/fun/resources/css/reuseCSS/nav.css" />
+		<link rel="stylesheet" href="/fun/resources/css/login.css" />
+		<link rel="stylesheet" href="/fun/resources/css/suitSizeLogin.css" />
+	</head>
+	<body>
+		<div class="navMobile">
+			<a href=""><img src="/fun/resources/img/icon/back.png"></a>
+			<span>Funtake登陆</span>
+		</div>
+		<div class="nav">
+			<div id = "navTable">
+				<div class="navTableRow">
+					<div class="navTableCell first">
+						<img alt="This is the main img in this page" title="Universe image" src = "/fun/resources/img/main/timg (7).jpg" id="logo">
+					</div>
+					<div class="navTableCell second">
+						<a id="logoName">友乐取</a>
+					</div>
+					<div class="navTableCell third">
+						<ul id="selectNav">
+							<li>按钮1</li>
+							<li>按钮2</li>
+							<li>按钮3</li>
+						</ul>
+					</div>
+					<div class="navTableCell fourth">
+						<div id="btnSelect">
+							<a class="btn" href="/fun/loginPage">登录</a>
+							<a class="btn" href="/fun/registePage">注册</a>
+						</div>
+					</div>
+					<div class="navTableCell fiveth">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="login">
+			<p>FunTake登录</p>
+			<form action="" method="post">
+				<label for="userName">账户:</label>
+				<input id="userName" name="userName" type="text" pattern="^\w{6,16}$" maxlength="16" placeholder="请输入用户名" required />
+				<div></div>
+				<label for="passWord">密码:</label>
+				<input id="passWord" name="passWord" type="password" pattern="^[\w\s(\\-\\+\\*\\/\\^\\%\\$\\#\\@\\!)]{6,16}$" maxlength="16" placeholder="请输入密码" required />
+				<div></div>
+				<input id="submit" type="submit" value="确认登录" />
+			</form>
+		</div>
+		<div id="text">
+			<p>友乐取</p>
+			<p>客户系统出入登录</p>
+		</div>
+		<div id="footer">
+			<div class="footerIcon">
+				<a><img src="/fun/resources/img/icon/main.png"/></a>
+				<a><img src="/fun/resources/img/icon/message.png"></a>
+				<a><img src="/fun/resources/img/icon/form.png"/></a>
+				<a><img src="/fun/resources/img/icon/account.png"></a>
+			</div>
+		</div>
+		<script src="/fun/resources/js/mainFunction.js"></script>
+		<script src="/fun/resources/js/loginPage.js"></script>
+	</body>
+</html>

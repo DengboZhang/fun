@@ -1,0 +1,155 @@
+body{
+	font-size: small;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	width: 1920px;
+	
+}
+.imgShow{
+	padding-top: 98px;
+	margin-left: -10px;
+	
+}
+
+.infoSub{
+	width: 1920px;
+	height: 110px;
+	background-color: white;
+	text-align: center;
+	font-size:4em ;
+}
+.infoSub .textBtn{
+	margin: 50px 0px;
+}
+.infoSub #IWant{
+	display: block;
+	display: inline;
+	background-color: grey;
+	color: white;
+	font-size: 0.41em;
+	margin-left: 40px;
+}
+.info{
+	width: 1920px;
+	height: 1000px;
+	background-color: white;
+	margin: 0px -10px;
+}
+.rankList{
+	margin-top: 30px;
+	width: 500px;
+	float: right;
+	height: 1100px;
+	background-color:white ;
+	border-left: black solid 1px;
+}
+.rankList p{
+	margin-left:40px ;
+	font-size: 2em;
+}
+.rankInfo{
+	margin-top:80px ;
+}
+.head{
+	float: left;
+	margin-left: 80px;
+	border-radius:60px ;
+	width: 60px;
+	height: 60px;
+	background-image: url(../img/main/t4.jpg);
+	background-size:cover ;
+}
+.rankListText{
+	width:200px;
+	height: 30px;
+	margin-left:160px ;
+}
+#rankTitle{
+	font-size: 6em;
+}
+.rankListText p{
+	margin-left:-5px ;
+	font-size: 1.5em;
+	text-decoration: underline;
+}
+.rankListText a{
+	display: block;
+	margin-top: -20px;
+}
+.rankList .moreInfo{
+	margin-top: 105px;
+	margin-left:380px ;
+	font-size: 1.2em;
+}
+.rankList .moreInfo a{
+	text-decoration: none;
+}
+.rankList .moreInfo a:visited{
+	color:  black;
+}
+
+.infoTableCell{
+	margin-left: 60px;
+	display: block;
+	float: left;
+	margin-top: 120px;
+	width: 380px;
+	height: 240px;
+	border: black solid 1px;
+	border-radius: 20px;
+	box-shadow:0px 0px 12px #808080 ;
+}
+.infoTableCell:hover{
+	background-color: aliceblue ;
+}
+.footer{
+	margin: 0px -10px -10px -10px;
+	margin-top: 250px;
+	background-color: black;
+	width: 1920px;
+	height: 500px;
+	clear: both;
+}
+.infoTableCell .headLeft{
+	margin-left:30px ;
+	margin-top: 30px;
+}
+.infoTableCell .leftText{
+	width: 180px;
+	margin-left: 120px;
+	margin-top: 30px ;
+}
+.infoTableCell .leftText hr{
+	margin-top: 30px;
+}
+.infoTableCell .leftTextInfo{
+	margin-top:20px ;
+	margin-left: 30px;
+	width: 330px;
+}
+.moreInfoLeft{
+	margin-right:60px ;
+	margin-top:10px ;
+	float: right;
+	font-size: 1.2em;
+}
+.moreInfoLeft a{
+	text-decoration: none;
+}
+.moreInfoLeft a:visited{
+	color:  black;
+}
+#scorllImg{
+	width: 1922px;
+    height: auto;"
+}
+#lastInfo{
+	padding-top: 40px;
+	margin-bottom: -30px;
+	width: 400px;
+	display: block;
+	font-size: 2em;
+	margin-left:40px;
+} 
+.mobileBtn{
+	display: none;
+}
